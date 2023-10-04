@@ -162,3 +162,45 @@
     }
 }
 
+// Wakanda styles
+#wakanda-section-part {
+    background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wakanda-section {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    background-color: darken($color: #021233dc, $amount: 2);
+    
+    .section-card {
+        width: 60%;
+        margin: 0 auto;
+
+        h1 {
+            text-transform: uppercase;
+            font-family: $Benyo;
+            color: $pink_3;
+            font-size: large;
+        }
+        
+        p {
+            text-align: justify;
+            margin: 20px 0;
+        }
+
+        .section-img {
+            transform: translateX(-100px);
+        }
+    }
+}
+
+//Enigme styles
+

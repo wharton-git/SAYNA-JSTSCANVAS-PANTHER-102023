@@ -82,6 +82,11 @@ nav .nav-link ul {
   color: #9E91B7;
 }
 
+header {
+  width: 100%;
+  overflow: hidden;
+}
+
 .head-part-2 {
   height: 100vh;
   display: flex;
@@ -114,6 +119,72 @@ nav .nav-link ul {
 }
 .head-part-2 .head-link a {
   color: #ffffff;
+}
+
+.wakanda-head {
+  height: 100vh;
+  background: url(./../Illustrations/Wakanda_page/Pantherwakanda1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wakanda-head .wakanda-head-content {
+  color: #9E91B7;
+  width: 80%;
+  padding: 15% 0 0 3%;
+}
+.wakanda-head .wakanda-head-content .wakanda-title {
+  font-family: "benyo";
+  font-size: 50px;
+}
+.wakanda-head .wakanda-head-content .wakanda-subtitle {
+  font-family: "wakanda";
+  font-size: 25px;
+}
+.wakanda-head .wakanda-head-content .wakanda-text {
+  text-align: justify;
+  width: 50%;
+}
+
+.enigme-head .enigme-head-content {
+  display: flex;
+}
+.enigme-head .enigme-head-content .enigme-img img {
+  width: 100%;
+}
+.enigme-head .enigme-head-content .enigme-text {
+  width: 50%;
+  transform: translateX(-100px);
+  margin-top: 200px;
+}
+.enigme-head .enigme-head-content .enigme-text h1 {
+  font-family: "benyo";
+  font-size: 50px;
+  color: #9E91B7;
+}
+.enigme-head .enigme-head-content .enigme-text p {
+  font-size: 12px;
+  letter-spacing: 1.5;
+  font-weight: 100;
+  width: 70%;
+  text-align: justify;
+}
+.enigme-head .enigme-head-content .enigme-text .enigme-text-item {
+  transform: translate(100px, 160px);
+}
+.enigme-head .enigme-head-content .enigme-text .enigme-text-item div {
+  text-align: center;
+  transform: translateX(-80px);
+}
+.enigme-head .enigme-head-content .enigme-text .enigme-text-item div img {
+  width: 30px;
+  margin-top: 20px;
+}
+
+.fond-enigme-text {
+  position: absolute;
+  width: 140%;
+  z-index: -1;
 }
 
 #section-landing {
@@ -251,9 +322,46 @@ nav .nav-link ul {
   padding: 10px;
 }
 
+#wakanda-section-part {
+  background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wakanda-section {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  background-color: rgba(2, 15, 41, 0.862745098);
+}
+.wakanda-section .section-card {
+  width: 60%;
+  margin: 0 auto;
+}
+.wakanda-section .section-card h1 {
+  text-transform: uppercase;
+  font-family: "benyo";
+  color: #9E91B7;
+  font-size: large;
+}
+.wakanda-section .section-card p {
+  text-align: justify;
+  margin: 20px 0;
+}
+.wakanda-section .section-card .section-img {
+  transform: translateX(-100px);
+}
+
 footer {
   display: flex;
   justify-content: center;
+  padding: 100px 100px 0 0;
+  background: linear-gradient(rgb(51, 40, 146), rgb(2, 21, 56), rgb(3, 21, 56));
 }
 footer .footer-img .footer-img-1 {
   transform: translate(190px, -135px);

@@ -1,5 +1,10 @@
 @import "./_nav";
 
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
 .head-part-2 {
     height: 100vh;
     display: flex;
@@ -43,3 +48,89 @@
         }
     }
 }
+
+//Wakanda page
+
+.wakanda-head {
+    height: 100vh;
+    background: url(./../Illustrations/Wakanda_page/Pantherwakanda1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .wakanda-head-content {
+        color: $pink_3;
+        width: 80%;
+        padding: 15% 0 0 3%;
+
+        .wakanda-title {
+            font-family: $Benyo;
+            font-size: 50px;
+        }
+
+        .wakanda-subtitle {
+            font-family: $Wakanda;
+            font-size: 25px;
+        }
+
+        .wakanda-text {
+            text-align: justify;
+            width: 50%;
+        }
+    }
+}
+
+//Enigme page
+
+.enigme-head {
+    .enigme-head-content {
+        display: flex;
+
+        .enigme-img {
+            img {
+                width: 100%;
+            }
+        }
+        .enigme-text {
+            width: 50%;
+            transform: translateX(-100px);
+            margin-top: 200px;
+
+            h1 {
+                font-family: $Benyo;
+                font-size: 50px;
+                color: $pink_3;
+            }
+    
+            p {
+                font-size: 12px;
+                letter-spacing: 1.5;
+                font-weight: 100;
+                width: 70%;
+                text-align: justify;
+            }
+
+            .enigme-text-item {
+                transform: translate(100px,160px);
+
+                div{
+                    text-align: center;
+                    transform: translateX(-80px);
+
+                    img {
+                        width: 30px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fond-enigme-text {
+    position: absolute;
+    width: 140%;
+    z-index: -1;
+}
+
+
