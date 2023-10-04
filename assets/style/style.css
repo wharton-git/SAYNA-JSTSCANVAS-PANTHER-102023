@@ -77,6 +77,11 @@ nav .nav-link ul {
   margin: 0 20px;
 }
 
+.active-link {
+  text-decoration: underline;
+  color: #9E91B7;
+}
+
 .head-part-2 {
   height: 100vh;
   display: flex;
