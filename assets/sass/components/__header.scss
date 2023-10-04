@@ -1,0 +1,45 @@
+@import "./_nav";
+
+.head-part-2 {
+    height: 100vh;
+    display: flex;
+    margin-left: 40px;
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+
+    .head-description {
+        width: 50%;
+        margin-top: 15%;
+    }
+
+    .head-img {
+        img {
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    .head-title {
+        font-family: $Panthera;
+        font-size: 50px;
+        color: $pink_3;
+    }
+
+    .head-subtitle {
+        font-family: $Benyo;
+        font-size: 25px;
+        margin: 5px 0 20px 0;
+        color: $pink_3;
+    }
+
+    .head-text {
+        margin-bottom: 20px;
+    }
+
+    .head-link {
+        a{
+            color: $white;
+        }
+    }
+}

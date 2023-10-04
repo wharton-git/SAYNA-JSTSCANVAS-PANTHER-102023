@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    li {
+        margin: 0 30px;
+        a {
+            font-family: $Benyo;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+
+    .nav-link {
+        ul {
+            display: flex;
+            margin: 0 20px;
+        }
+    }
+}

@@ -1,3 +1,249 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, a, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "wakanda";
+  src: url(./../fonts/WakandaForever-Regular.ttf);
+}
+@font-face {
+  font-family: "benyo";
+  src: url(./../fonts/BEYNO.ttf);
+}
+@font-face {
+  font-family: "panthera";
+  src: url(./../fonts/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+  font-family: "cantarell";
+  src: url(./../fonts/Cantarell-Regular.ttf);
+}
+body {
+  background: radial-gradient(circle, #021740, #0e1626, #0e1626, #071e31);
+  color: white;
+  font-family: "cantarell";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+nav li {
+  margin: 0 30px;
+}
+nav li a {
+  font-family: "benyo";
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+nav .nav-link ul {
+  display: flex;
+  margin: 0 20px;
+}
+
+.head-part-2 {
+  height: 100vh;
+  display: flex;
+  margin-left: 40px;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.head-part-2 .head-description {
+  width: 50%;
+  margin-top: 15%;
+}
+.head-part-2 .head-img img {
+  position: relative;
+  width: 100%;
+}
+.head-part-2 .head-title {
+  font-family: "panthera";
+  font-size: 50px;
+  color: #9E91B7;
+}
+.head-part-2 .head-subtitle {
+  font-family: "benyo";
+  font-size: 25px;
+  margin: 5px 0 20px 0;
+  color: #9E91B7;
+}
+.head-part-2 .head-text {
+  margin-bottom: 20px;
+}
+.head-part-2 .head-link a {
+  color: #ffffff;
+}
+
+#section-landing {
+  display: flex;
+  margin: 0 8% 0 8%;
+}
+#section-landing .section-left .left-box {
+  margin-bottom: 20px;
+}
+#section-landing .section-left .left-box .left-box-title {
+  font-family: "benyo";
+  font-size: 20px;
+  margin: 20px 0;
+  color: #9E91B7;
+}
+#section-landing .section-left .left-box .left-box-text {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0 30px 20px 0;
+  text-align: justify;
+}
+#section-landing .section-right .right-card {
+  width: 80%;
+  height: 40%;
+  margin: 30% auto;
+  background: #ffffff;
+  border-radius: 15px;
+  color: #021740;
+}
+#section-landing .section-right .right-card .right-card-img {
+  text-align: center;
+}
+#section-landing .section-right .right-card .right-card-img img {
+  width: 80%;
+  border-radius: 20px;
+  transform: translateY(-200px);
+}
+#section-landing .section-right .right-card .right-card-description {
+  width: 70%;
+  margin: 0 auto;
+  transform: translateY(-180px);
+}
+#section-landing .section-right .right-card .right-card-description .desc-title {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+#section-landing .section-right .right-card .right-card-description .desc-status {
+  font-size: 10px;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+}
+#section-landing .section-right .right-card .right-card-description .desc-status span {
+  background: #3D2DA6;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+#section-landing .section-right .right-card .right-card-description .desc-info {
+  font-size: 13px;
+  text-align: justify;
+}
+#section-landing .section-right .right-card .right-card-description .desc-info p {
+  margin-bottom: 10px;
+}
+#section-landing .section-right .right-card .right-card-description .desc-info span {
+  font-weight: bold;
+}
+#section-landing .section-right .right-card .right-card-description .desc-info .info-except {
+  font-weight: 100;
+}
+#section-landing .section-right .right-img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact {
+  height: 150vh;
+  background: url(./../Illustrations/Landing_page/Pantherhome4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact .contact-box {
+  transform: translateY(150px);
+  text-align: center;
+  color: #021740;
+  width: 55%;
+  padding: 50px 0;
+  margin: 0 auto;
+  border-radius: 150px;
+  background: linear-gradient(#ffffff 2%, #ffffff 20%, rgba(255, 255, 255, 0.4235294118), rgba(255, 255, 255, 0.1098039216));
+}
+.contact .contact-box p {
+  font-size: 15px;
+}
+.contact .contact-box h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact .contact-box .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-box .contact-form form input::placeholder, .contact .contact-box .contact-form form textarea::placeholder {
+  color: #021740;
+}
+.contact .contact-box .contact-form form input[type=text], .contact .contact-box .contact-form form input[type=email] {
+  width: 50%;
+  margin: 5px auto;
+  padding: 10px;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid #021740;
+}
+.contact .contact-box .contact-form form input[type=submit] {
+  width: 20%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: inherit;
+  background: #F2CEF2;
+  color: #021740;
+  text-transform: uppercase;
+}
+.contact .contact-box .contact-form form textarea {
+  width: 50%;
+  margin: 5px auto;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid #021740;
+  padding: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

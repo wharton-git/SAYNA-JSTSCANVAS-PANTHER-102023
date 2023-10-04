@@ -1,0 +1,164 @@
+#section-landing {
+    display: flex;
+    margin: 0 8% 0 8%;
+    .section-left {
+        
+        .left-box {
+            margin-bottom: 20px;
+
+            .left-box-title {
+                font-family: $Benyo;
+                font-size: 20px;
+                margin: 20px 0;
+                color: $pink_3;
+            }
+
+            .left-box-text {
+                font-size: 12px;
+                font-weight: 100;
+                line-height: 1.5;
+                margin: 0 30px 20px 0;
+                text-align: justify;
+            }
+        }
+    }
+
+    .section-right {
+
+        .right-card {
+            width: 80%;
+            height: 40%;
+            margin: 30% auto;
+            background: $white;
+            border-radius: 15px;
+            color: $dark_blue;
+
+            .right-card-img {
+                text-align: center;
+                img {
+                    width: 80%;
+                    border-radius: 20px;
+                    transform: translateY(-200px);
+                }
+            }
+
+            .right-card-description {
+                width: 70%;
+                margin: 0 auto;
+                transform: translateY(-180px);
+
+                .desc-title {
+                    text-align: center;
+                    font-weight: bold;
+                    margin: 10px;
+                }
+
+                .desc-status {
+                    font-size: 10px;
+                    color: $white;
+                    text-align: center;
+                    margin: 20px;
+
+                    span {
+                        background: $purple;
+                        border-radius: 5px;
+                        margin: 5px;
+                        padding: 5px;
+                    }
+                }
+
+                .desc-info {
+                    font-size: 13px;
+                    text-align: justify;
+                    p {
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+
+                    .info-except {
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+
+        .right-img {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.contact {
+    height: 150vh;
+    background: url(./../Illustrations/Landing_page/Pantherhome4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .contact-box {
+        transform: translateY(150px);
+        text-align: center;
+        color: $dark_blue;
+        width: 55%;
+        padding: 50px 0;
+        margin: 0 auto;
+        border-radius: 150px;
+        background: linear-gradient($white 2%, $white 20%, #ffffff6c, #ffffff1c);
+
+        p {
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input::placeholder, textarea::placeholder {
+                    color: $dark_blue;
+                }
+
+                input[type="text"], input[type="email"] {
+                    width: 50%;
+                    margin: 5px auto;
+                    padding: 10px;
+                    background: transparent;
+                    border-radius: 20px;
+                    border: 1px solid $dark_blue;
+                }
+
+                input[type="submit"]{
+                    width: 20%;
+                    margin: 5px auto;
+                    padding: 10px;
+                    border-radius: 20px;
+                    border: inherit;
+                    background: $pink_1;
+                    color: $dark_blue;
+                    text-transform: uppercase;
+                }
+
+                textarea {
+                    width: 50%;
+                    margin: 5px auto;
+                    background: transparent;
+                    border-radius: 20px;
+                    border: 1px solid $dark_blue;
+                    padding: 10px;
+                }
+
+            }
+        }
+    }
+}
+
