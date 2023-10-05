@@ -1,5 +1,5 @@
 .swiper {
-    width: 90%;
+    width: 96%;
     height: 100%;
     overflow-y: visible;
 }
@@ -7,7 +7,7 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
