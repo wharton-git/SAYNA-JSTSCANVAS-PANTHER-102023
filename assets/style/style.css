@@ -52,10 +52,40 @@ input {
   font-family: "cantarell";
   src: url(./../fonts/Cantarell-Regular.ttf);
 }
+.vertical-line {
+  position: fixed;
+  z-index: 2;
+  margin-left: 50px;
+}
+.vertical-line .ext-line {
+  position: absolute;
+  top: 0;
+  transform: translateX(-20px);
+  width: 3px;
+  height: 65vh;
+  background: #9E91B7;
+}
+.vertical-line .int-line {
+  width: 3px;
+  height: 35vh;
+  background: #9E91B7;
+}
+
+.social-link {
+  transform: translateX(-20px);
+  display: flex;
+  flex-direction: column;
+}
+.social-link a {
+  padding: 10px;
+  margin-top: 5px;
+}
+
 body {
   background: radial-gradient(circle, #021740, #0e1626, #0e1626, #071e31);
   color: white;
   font-family: "cantarell";
+  overflow-x: hidden;
 }
 
 .separator {
@@ -93,14 +123,14 @@ header {
 .head-part-2 {
   height: 100vh;
   display: flex;
-  margin-left: 40px;
   font-size: 10px;
   font-weight: 100;
   letter-spacing: 1px;
 }
 .head-part-2 .head-description {
-  width: 50%;
+  width: 60%;
   margin-top: 15%;
+  transform: translateX(120px);
 }
 .head-part-2 .head-img img {
   position: relative;
@@ -119,6 +149,7 @@ header {
 }
 .head-part-2 .head-text {
   margin-bottom: 20px;
+  width: 70%;
 }
 .head-part-2 .head-link a {
   color: #ffffff;
@@ -135,6 +166,7 @@ header {
   color: #9E91B7;
   width: 80%;
   padding: 15% 0 0 3%;
+  transform: translateX(100px);
 }
 .wakanda-head .wakanda-head-content .wakanda-title {
   font-family: "benyo";
@@ -360,6 +392,70 @@ header {
   transform: translateX(-100px);
 }
 
+.enigme-section {
+  display: flex;
+  margin-left: 100px;
+}
+
+.enigme-card {
+  width: 40%;
+}
+.enigme-card .e-card-title {
+  margin: 10px 0;
+}
+.enigme-card .e-card-title h1 {
+  font-family: "benyo";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #9E91B7;
+  font-size: 25px;
+}
+.enigme-card .e-card-title span {
+  font-family: "Arial";
+}
+.enigme-card .e-card-quest {
+  margin: 10px 0;
+}
+.enigme-card .e-card-quest .quest-part-1 {
+  font-size: 12px;
+}
+.enigme-card .e-card-quest .quest-part-2 {
+  color: #9E91B7;
+  font-size: 25px;
+  font-family: "wakanda";
+  margin: 10% 0;
+}
+.enigme-card .e-card-answer p {
+  font-size: smaller;
+}
+.enigme-card .e-card-answer form {
+  width: 80%;
+}
+.enigme-card .e-card-answer form input[type=text] {
+  border: 1px #F2CEF2 solid;
+  background: transparent;
+  padding: 10px;
+  border-radius: 40px;
+  width: 100%;
+  margin: 10px auto;
+}
+.enigme-card .e-card-answer form input[type=button] {
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 40px;
+  background: #F2CEF2;
+  color: #021740;
+  font-size: 12px;
+  font-family: "cantarell";
+}
+
+.enigme-card .e-card-indice img {
+  width: 600px;
+  height: 300px;
+}
+
 .slide-card {
   display: flex;
   background: rgb(3, 20, 54);
@@ -386,7 +482,7 @@ header {
 }
 
 .container {
-  width: 95vw;
+  width: 90vw;
   margin: 0 auto;
   background: rgb(3, 20, 54);
   border-radius: 20px;

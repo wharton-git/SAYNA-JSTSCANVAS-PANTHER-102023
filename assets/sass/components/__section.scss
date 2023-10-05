@@ -204,5 +204,79 @@
 
 //Enigme styles
 
+.enigme-section {
+    display: flex;
+    margin-left: 100px;
+}
+
+.enigme-card {
+    width: 40%;
+    .e-card-title {
+        margin: 10px 0;
+        h1 {
+            font-family: $Benyo;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: $pink_3;
+            font-size: 25px;
+        }
+        span {
+            font-family: 'Arial';
+        }
+    }
+
+    .e-card-quest {
+        margin: 10px 0;
+        .quest-part-1 {
+            font-size: 12px;
+        }
+
+        .quest-part-2 {
+            color: $pink_3;
+            font-size: 25px;
+            font-family: $Wakanda;
+            margin: 10% 0;
+        }
+    }
+
+    .e-card-answer {
+        p{
+            font-size: smaller;
+        }
+        form {
+            width: 80%;
+            input[type="text"] {
+                border: 1px $pink_1 solid;
+                background: transparent;
+                padding: 10px;
+                border-radius: 40px;
+                width: 100%;
+                margin: 10px auto;
+            }
+
+            input[type="button"] {
+                display: block;
+                border: none;
+                padding: 10px 20px;
+                margin: 20px auto;
+                border-radius: 40px;
+                background: $pink_1;
+                color: $dark_blue;
+                font-size: 12px;
+                font-family: $Cantarell;
+            }
+        }
+    }
+}
+
+.enigme-card {
+    .e-card-indice {
+        img {
+            width: 600px;
+            height: 300px;
+        }
+    }
+}
+
 
 @import "./_slide";

@@ -7,14 +7,14 @@ header {
 .head-part-2 {
     height: 100vh;
     display: flex;
-    margin-left: 40px;
     font-size: 10px;
     font-weight: 100;
     letter-spacing: 1px;
 
     .head-description {
-        width: 50%;
+        width: 60%;
         margin-top: 15%;
+        transform: translateX(120px);
     }
 
     .head-img {
@@ -39,6 +39,7 @@ header {
 
     .head-text {
         margin-bottom: 20px;
+        width: 70%;
     }
 
     .head-link {
@@ -61,6 +62,7 @@ header {
         color: $pink_3;
         width: 80%;
         padding: 15% 0 0 3%;
+        transform: translateX(100px);
 
         .wakanda-title {
             font-family: $Benyo;
