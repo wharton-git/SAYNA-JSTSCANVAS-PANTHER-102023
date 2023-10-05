@@ -140,12 +140,14 @@ header {
   font-family: "panthera";
   font-size: 50px;
   color: #9E91B7;
+  transition: all 0.3s ease-in-out;
 }
 .head-part-2 .head-subtitle {
   font-family: "benyo";
   font-size: 25px;
   margin: 5px 0 20px 0;
   color: #9E91B7;
+  transition: all 0.3s ease-in-out;
 }
 .head-part-2 .head-text {
   margin-bottom: 20px;
@@ -169,12 +171,16 @@ header {
   transform: translateX(100px);
 }
 .wakanda-head .wakanda-head-content .wakanda-title {
+  margin-bottom: 20px;
   font-family: "benyo";
   font-size: 50px;
+  transition: all 0.3s ease;
 }
 .wakanda-head .wakanda-head-content .wakanda-subtitle {
+  margin-bottom: 20px;
   font-family: "wakanda";
   font-size: 25px;
+  transition: transform 0.3s ease;
 }
 .wakanda-head .wakanda-head-content .wakanda-text {
   text-align: justify;
@@ -196,6 +202,7 @@ header {
   font-family: "benyo";
   font-size: 50px;
   color: #9E91B7;
+  transition: all 0.3s ease-in-out;
 }
 .enigme-head .enigme-head-content .enigme-text p {
   font-size: 12px;
@@ -252,11 +259,12 @@ header {
 }
 #section-landing .section-right .right-card .right-card-img {
   text-align: center;
+  transform: translateY(-200px);
 }
 #section-landing .section-right .right-card .right-card-img img {
+  transition: 0.3s all ease;
   width: 80%;
   border-radius: 20px;
-  transform: translateY(-200px);
 }
 #section-landing .section-right .right-card .right-card-description {
   width: 70%;
@@ -296,6 +304,9 @@ header {
 #section-landing .section-right .right-img {
   width: 80%;
   margin: 0 auto;
+}
+#section-landing .section-right .right-img img {
+  transition: all 0.3s ease-in-out;
 }
 
 .contact {
@@ -636,6 +647,26 @@ footer a {
   transform: scale(1.3);
   transition: transform 0.5s ease;
   border-radius: 10px;
+}
+
+.enigme-text h1:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.wakanda-subtitle:hover, .wakanda-title:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.head-title:hover, .head-subtitle:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.section-right img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

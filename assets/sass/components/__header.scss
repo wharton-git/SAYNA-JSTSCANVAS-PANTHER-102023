@@ -28,6 +28,7 @@ header {
         font-family: $Panthera;
         font-size: 50px;
         color: $pink_3;
+        transition: all .3s ease-in-out;
     }
 
     .head-subtitle {
@@ -35,6 +36,7 @@ header {
         font-size: 25px;
         margin: 5px 0 20px 0;
         color: $pink_3;
+        transition: all .3s ease-in-out;
     }
 
     .head-text {
@@ -65,13 +67,17 @@ header {
         transform: translateX(100px);
 
         .wakanda-title {
+            margin-bottom: 20px;
             font-family: $Benyo;
             font-size: 50px;
+            transition: all .3s ease;
         }
 
         .wakanda-subtitle {
+            margin-bottom: 20px;
             font-family: $Wakanda;
             font-size: 25px;
+            transition: transform .3s ease;
         }
 
         .wakanda-text {
@@ -101,6 +107,7 @@ header {
                 font-family: $Benyo;
                 font-size: 50px;
                 color: $pink_3;
+                transition: all .3s ease-in-out;
             }
     
             p {
