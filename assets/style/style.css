@@ -65,7 +65,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 2% 5%;
+  margin: 2% 5% 2% 8%;
 }
 nav li {
   margin: 0 30px;
@@ -87,7 +87,6 @@ nav .nav-link ul {
 }
 
 header {
-  width: 100%;
   overflow: hidden;
 }
 
