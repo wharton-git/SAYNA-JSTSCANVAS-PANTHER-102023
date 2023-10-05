@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     prevButton.addEventListener('click', function() {
         images.forEach(function(image) {
             var screenWidth = window.innerWidth;
-            var columnWidth = screenWidth/3;
-            var imageLeftPosition = image.getBoundingClientRect().left;
+            var columnWidth = screenWidth/4;
+            var imageRightPosition = image.getBoundingClientRect().right;
             image.classList.remove('scale-transform');
-            if (imageLeftPosition > columnWidth) {
+            if (imageRightPosition < columnWidth) {
                 image.classList.add('scale-transform');
             }
         });
