@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     nextButton.addEventListener('click', function() {
         images.forEach(function(image) {
             var screenWidth = window.innerWidth;
-            var columnWidth = screenWidth / 3;
+            var columnWidth = screenWidth / 2;
             var imageLeftPosition = image.getBoundingClientRect().left;
             image.classList.remove('scale-transform');
             if (imageLeftPosition < columnWidth) {
@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     prevButton.addEventListener('click', function() {
         images.forEach(function(image) {
             var screenWidth = window.innerWidth;
-            var columnWidth = screenWidth / 3;
+            var columnWidth = screenWidth/3;
             var imageLeftPosition = image.getBoundingClientRect().left;
             image.classList.remove('scale-transform');
-            if (imageLeftPosition < columnWidth) {
+            if (imageLeftPosition > columnWidth) {
                 image.classList.add('scale-transform');
             }
         });
