@@ -7,6 +7,9 @@ const titreEnigme = document.querySelector(".e-card-title");
 const enigme1 = document.querySelector(".e-card-quest");
 const enigme2 = document.querySelector(".e-card-quest-2");
 const enigme3 = document.querySelector(".e-card-quest-3");
+const closeP = document.getElementById('close');
+const alphabetContainer = document.getElementById("alphabet-container");
+const body = document.body;
 
 
 var reponse1 = `SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS`;
@@ -34,7 +37,31 @@ function ouverturePopUp() {
     reponseEnigme.value = "";
 }
 
-const body = document.body;
+function popUpFinished() {
+    const popup2 = document.getElementById("enigmaPopup");
+    const countdownElement = document.getElementById("countdown");
+
+    popup2.style.display = "block";
+
+    const endTime = new Date().getTime() + 60000;
+
+    const countdown = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = endTime - now;
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = `00 : 00 : ${seconds}`;
+
+        if (distance < 0) {
+            clearInterval(countdown);
+            countdownElement.innerHTML = "Redirection vers la page d'accueil...";
+
+            setTimeout(function() {
+                window.location.href = "enigme.html";
+            }, 1000);
+        }
+    }, 1000);
+}
 
 sendResponse.addEventListener("click", function() {
     const reponseEnigme = document.getElementById("reponse-enigme");
@@ -54,6 +81,7 @@ sendResponse.addEventListener("click", function() {
             questionSuivant.textContent = "reesayer";
 
         }
+        ouverturePopUp();
     }else if (titreEnigme.textContent.trim() == "enigme numero 2"){
         if (reponseFormat == resultat_2){
             console.log("OK");
@@ -67,23 +95,19 @@ sendResponse.addEventListener("click", function() {
             questionSuivant.textContent = "reesayer";
 
         }
-
+        ouverturePopUp();
     }else {
         if (reponseFormat == resultat_3){
             console.log("OK");
-            popUpTitle.textContent = "Bravo!";
-            popUpText.textContent = "Tu as trouvé la réponse. Es-tu prêt pour l'énigme suivantes?";
-            questionSuivant.textContent = "question suivante";
+            popUpFinished();
         }else {
             console.log("OHHHH");
             popUpTitle.textContent = "Dommage !";
             popUpText.textContent = "Tu n'as pas trouvé la réponse. Tente encore ta chance. Courage !";
             questionSuivant.textContent = "reesayer";
-
+            ouverturePopUp();
         }
     }
-
-    ouverturePopUp();
 
     console.log(questionSuivant.textContent);
 });
@@ -121,3 +145,28 @@ questionSuivant.addEventListener("click", function() {
         fermeturePopUp();
     }
 });
+
+
+closeP.addEventListener('click', () => {
+    const popup2 = document.getElementById("enigmaPopup");
+    popup2.style.display = "none";
+    window.location.href = "enigme.html";
+});
+
+function generateAlphabet() {
+    const alphabetContainer = document.getElementById("alphabet-container"); // Obtenez l'élément parent où vous souhaitez afficher l'alphabet
+
+    for (let i = 65; i <= 90; i++) {
+        const letter = String.fromCharCode(i); 
+        const container = document.createElement("div"); 
+        container.textContent = `${letter} = `; 
+        const styledLetter = document.createElement("span");
+        styledLetter.textContent = `${letter}; `; 
+        styledLetter.classList.add("font");
+        container.appendChild(styledLetter);
+        alphabetContainer.appendChild(container);
+    }
+}
+
+generateAlphabet();
+

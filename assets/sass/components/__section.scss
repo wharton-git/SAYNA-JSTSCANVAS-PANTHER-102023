@@ -297,15 +297,31 @@
 
 .enigme-card {
     .e-card-indice {
+        transform: translateX(30%);
+
+        p {
+            margin-top: 30%;            
+        }
         img {
-            width: 600px;
-            height: 300px;
+            position: absolute;
+            transform: translate(-10%,-90%);
+            width: 800Px;
         }
     }
 }
 
 #reponse-enigme {
     color: $white;
+}
+
+#alphabet-container {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .font {
+        font-family: $Wakanda;
+    }
 }
 
 .hide {

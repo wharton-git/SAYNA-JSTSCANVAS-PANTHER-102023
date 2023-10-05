@@ -469,13 +469,29 @@ header {
   font-family: "cantarell";
 }
 
+.enigme-card .e-card-indice {
+  transform: translateX(30%);
+}
+.enigme-card .e-card-indice p {
+  margin-top: 30%;
+}
 .enigme-card .e-card-indice img {
-  width: 600px;
-  height: 300px;
+  position: absolute;
+  transform: translate(-10%, -90%);
+  width: 800Px;
 }
 
 #reponse-enigme {
   color: #ffffff;
+}
+
+#alphabet-container {
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#alphabet-container .font {
+  font-family: "wakanda";
 }
 
 .hide {
@@ -555,6 +571,11 @@ header {
   color: #021740;
   text-transform: uppercase;
   font-size: 9px;
+}
+
+.pop-card {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
