@@ -470,14 +470,17 @@ header {
 }
 
 .enigme-card .e-card-indice {
-  transform: translateX(30%);
+  transform: translateX(20%);
+  text-align: center;
 }
-.enigme-card .e-card-indice p {
-  margin-top: 30%;
+.enigme-card .e-card-indice div.indice {
+  transform: translateY(50%) translateX(10%);
+}
+.enigme-card .e-card-indice div.indice div {
+  margin-top: 20px;
 }
 .enigme-card .e-card-indice img {
-  position: absolute;
-  transform: translate(-10%, -90%);
+  transform: translateY(-50%);
   width: 800Px;
 }
 

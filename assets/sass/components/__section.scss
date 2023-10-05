@@ -297,14 +297,19 @@
 
 .enigme-card {
     .e-card-indice {
-        transform: translateX(30%);
+        transform: translateX(20%);
+        text-align: center;
 
-        p {
-            margin-top: 30%;            
+        div.indice {
+
+            transform: translateY(50%) translateX(10%);
+            div {
+                margin-top: 20px;
+            }            
         }
         img {
-            position: absolute;
-            transform: translate(-10%,-90%);
+            // position: absolute;
+            transform: translateY(-50%);
             width: 800Px;
         }
     }

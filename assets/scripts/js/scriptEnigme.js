@@ -8,6 +8,7 @@ const enigme1 = document.querySelector(".e-card-quest");
 const enigme2 = document.querySelector(".e-card-quest-2");
 const enigme3 = document.querySelector(".e-card-quest-3");
 const closeP = document.getElementById('close');
+const indice = document.querySelector(".e-card-indice div");
 const alphabetContainer = document.getElementById("alphabet-container");
 const body = document.body;
 
@@ -122,6 +123,16 @@ questionSuivant.addEventListener("click", function() {
 
             titreEnigme.innerHTML = "<h1>enigme numero <span>2</span></h1>";
 
+            indice.innerHTML = `<div>
+                                Le savait tu ?
+                                    <div class="indice-text">
+                                    Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français
+                                    est la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans
+                                    une phrase. Et si tu regardais quel symbole revient le plus souvent pour en
+                                    déduire son décalage dans l’alphabet ? 
+                                    </div>
+                                </div>`;
+
             fermeturePopUp();
 
         }else if (enigme1.classList.contains("hide") && enigme3.classList.contains("hide")) {
@@ -129,6 +140,17 @@ questionSuivant.addEventListener("click", function() {
             enigme2.classList.add("hide");
 
             titreEnigme.innerHTML = "<h1>enigme numero <span>3</span></h1>";
+
+            indice.innerHTML = `<div class="indice">
+            Le savait tu ?
+                <div class="indice-text">
+                Le philosophe Francis Bacon inventa en 1605 un alphabet bilitère, uniquement
+                composé des deux lettres A et B. C'est en quelque sorte l'ancêtre du système
+                binaire des ordinateurs actuels car toute lettre pouvait être construite avec un
+                enchainement précis de ces deux lettres, tandis que le système binaire
+                informatique utilise 0 et 1.
+                </div>
+            </div>`;
 
             fermeturePopUp();
 
