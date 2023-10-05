@@ -236,6 +236,32 @@
             font-size: 25px;
             font-family: $Wakanda;
             margin: 10% 0;
+            word-spacing: 10px;
+            line-height: 1.5;
+        }
+    }
+
+    .e-card-quest-2 {
+        .quest-2-part-1 {
+            font-size: 12px;
+        }
+
+        .quest-2-part-2 {
+            margin: 10% 0;
+            font-size: 12px;
+        }
+    }
+
+    .e-card-quest-3 {
+        .quest-3-part-1 {
+            font-size: 12px;
+        }
+
+        .quest-3-part-2 {
+            word-spacing: 10px;
+            line-height: 1.5;
+            margin: 10% 0;
+            font-size: 12px;
         }
     }
 
@@ -278,5 +304,13 @@
     }
 }
 
+#reponse-enigme {
+    color: $white;
+}
+
+.hide {
+    display: none;
+}
 
 @import "./_slide";
+@import "./_pop-up";

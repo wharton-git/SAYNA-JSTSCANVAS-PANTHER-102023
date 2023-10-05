@@ -424,6 +424,24 @@ header {
   font-size: 25px;
   font-family: "wakanda";
   margin: 10% 0;
+  word-spacing: 10px;
+  line-height: 1.5;
+}
+.enigme-card .e-card-quest-2 .quest-2-part-1 {
+  font-size: 12px;
+}
+.enigme-card .e-card-quest-2 .quest-2-part-2 {
+  margin: 10% 0;
+  font-size: 12px;
+}
+.enigme-card .e-card-quest-3 .quest-3-part-1 {
+  font-size: 12px;
+}
+.enigme-card .e-card-quest-3 .quest-3-part-2 {
+  word-spacing: 10px;
+  line-height: 1.5;
+  margin: 10% 0;
+  font-size: 12px;
 }
 .enigme-card .e-card-answer p {
   font-size: smaller;
@@ -454,6 +472,14 @@ header {
 .enigme-card .e-card-indice img {
   width: 600px;
   height: 300px;
+}
+
+#reponse-enigme {
+  color: #ffffff;
+}
+
+.hide {
+  display: none;
 }
 
 .slide-card {
@@ -489,6 +515,46 @@ header {
 }
 .container img {
   transition: transform 0.3s ease;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  z-index: 6;
+}
+
+.popup-content {
+  background: linear-gradient(#9385b4, #2b2687);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  margin: 10% auto;
+  box-shadow: 0 0 40px 70px #2b2687;
+}
+
+#pop-up-title {
+  margin: 20px;
+}
+
+#pop-up-btn {
+  margin: 20Px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: #F2CEF2;
+  color: #021740;
+  text-transform: uppercase;
+  font-size: 9px;
 }
 
 footer {

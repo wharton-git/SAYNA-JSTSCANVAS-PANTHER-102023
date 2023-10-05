@@ -84,24 +84,57 @@
                 <div class="enigme-section">
                     <div class="enigme-card">
                         <div class="e-card-title">
-                            <h1>enimge numero <span>1</span></h1>
+                            <h1>enigme numero <span>1</span></h1>
                         </div>
-                        <div class="e-card-quest">
-                            <p class="quest-part-1">
-                                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
-                                et apprend par la même occasion la première valeur d’une Dora Milaje.
-                            </p>
-                            <p class="quest-part-2">
-                                “ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS ”
-                            </p>
+
+                        <div class="quest-gener">
+                            <div class="e-card-quest">
+                                <p class="quest-part-1">
+                                    Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
+                                    et apprend par la même occasion la première valeur d’une Dora Milaje.
+                                </p>
+                                <p class="quest-part-2">
+                                    “ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS ”
+                                </p>
+                            </div>
+
+                            <div class="e-card-quest-2 hide">
+                                <p class="quest-2-part-1">
+                                    Une anecdote intéressante est écrite juste en dessous mais elle est codée par un
+                                    code césar également appelé code de chiffrement par décalage . L’alphabet a été
+                                    décalé, trouve la clé de chiffrement qui te permettrait de retrouver les lettres et
+                                    retranscris la phrase :
+                                </p>
+                                <p class="quest-2-part-2">
+                                    Tm nqtu lmjcbm i Wikstivl mv Kitqnwzvqm. Qt aioqb lm ti dqttm lwvb mab
+                                    wzqoqviqzm Zgiv Kwwotmz mb moitmumvb ti dqttm ycq i dc viqbzm tm
+                                    uwcdmumvb xwtqbqycm lma jtiks xivbpmza
+                                </p>
+                            </div>
+
+                            <div class="e-card-quest-3 hide">
+                                <p class="quest-3-part-1">
+                                    Lorsque T’Challa mange l’herbe en forme de coeur pour recevoir les pouvoirs du
+                                    Black Panther, il voit son père afin de lui demander conseil afin de devenir un bon
+                                    roi. Cette scène rappelle la même scène d’un certain film où un père dit à son fils de
+                                    ne pas oublier qui il est et d’où il vient. Quel est ce film ?
+                                </p>
+                                <p class="quest-3-part-2">
+                                    01001100 01000101 00100000 01010010 01001111 01001001
+                                    00100000 01001100 01001001 01001111 01001110 00001101
+                                    00001010
+                                </p>
+                            </div>
+
                         </div>
+
                         <div class="e-card-answer">
                             <p>
                                 Alors, tu as la réponse ?
                             </p>
                             <form action="">
-                                <input type="text" placeholder="Réponse">
-                                <input type="button" value="ENVOYER">
+                                <input type="text" id="reponse-enigme" placeholder="Réponse">
+                                <input type="button" value="ENVOYER" id="send-btn">
                             </form>
                         </div>
                     </div>
@@ -112,67 +145,16 @@
                     </div>
                 </div>
 
-                <div class="enigme-section">
-                    <div class="enigme-card">
-                        <div class="e-card-title">
-                            <h1>enimge numero <span>2</span></h1>
-                        </div>
-                        <div class="e-card-quest">
-                            <p class="quest-part-1">
-                                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
-                                et apprend par la même occasion la première valeur d’une Dora Milaje.
-                            </p>
-                            <p class="quest-part-2">
-                                “ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS ”
-                            </p>
-                        </div>
-                        <div class="e-card-answer">
-                            <p>
-                                Alors, tu as la réponse ?
-                            </p>
-                            <form action="">
-                                <input type="text" placeholder="Réponse">
-                                <input type="button" value="ENVOYER">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="enigme-card">
-                        <div class="e-card-indice">
-                            <img src="./../assets/Illustrations/Page_Enigme/Pantherenigme2.png" alt="">
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <h2 id="pop-up-title">Titre</h2>
+                        <p id="pop-up-text">Text</p>
+                        <div>
+                            <button id="pop-up-btn">Button</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="enigme-section">
-                    <div class="enigme-card">
-                        <div class="e-card-title">
-                            <h1>enimge numero <span>3</span></h1>
-                        </div>
-                        <div class="e-card-quest">
-                            <p class="quest-part-1">
-                                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
-                                et apprend par la même occasion la première valeur d’une Dora Milaje.
-                            </p>
-                            <p class="quest-part-2">
-                                “ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS ”
-                            </p>
-                        </div>
-                        <div class="e-card-answer">
-                            <p>
-                                Alors, tu as la réponse ?
-                            </p>
-                            <form action="">
-                                <input type="text" placeholder="Réponse">
-                                <input type="button" value="ENVOYER">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="enigme-card">
-                        <div class="e-card-indice">
-                            <img src="./../assets/Illustrations/Page_Enigme/Pantherenigme2.png" alt="">
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -211,5 +193,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./../assets/scripts/js/scriptEnigme.js"></script>
 </body>
 </html>
